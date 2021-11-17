@@ -1,12 +1,15 @@
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, View } from "react-native";
 import Card from "../components/Card";
 import NumberContainer from "../components/NumberContainer";
+
+import Text from "../components/Text";
+import Title from "../components/Title";
 
 const GameOverScreen = (props) => {
   return (
     <View style={styles.screen}>
-      <Text>The Game Is Over!</Text>
+      <Title>The Game Is Over!</Title>
       <Card style={styles.card}>
         <Text>Your oponent had to guess {props.guessRound} times!</Text>
         <Text>The Number Was {props.userNumber}</Text>

@@ -1,6 +1,8 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import colors from "../constants/colors";
+
+import Text from './Text';
 
 const NumberContainer = (props) => (
   <View style={styles.container}>
